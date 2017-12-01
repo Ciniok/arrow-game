@@ -1,0 +1,38 @@
+.GameTile {
+    padding: 10px;    
+    margin: 3px;
+    background: rgba(4, 27, 84, 0.83);
+    color: white;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 2px solid white;
+    box-shadow: 0 0 1px 1px #669;
+    opacity: .75;
+}
+
+.GameTile--interactive {
+    cursor: pointer;
+    opacity: 1;
+}
+.GameTile--interactive:active,
+.GameTile--activated {
+    border-color: orange;
+    color: orange;
+    border-style: dashed;
+    box-shadow: 0 0 1px orangered;
+}
+.GameTile--interactive:active,
+.GameTile--click-origin {
+    border-style: solid;
+    box-shadow: 0 0 5px 1px orange;
+}
+
+.GameTile--activated,
+.GameTile--click-origin {
+    cursor: default;
+    pointer-events: none;
+}

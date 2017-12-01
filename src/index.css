@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #EEE;
+}
+
+#root {
+  border: 1px solid #CCC;
+  background: #DDD;
+  box-shadow: 2px 2px 2px #CECECE;
+  width: 800px;
+  height: 600px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
